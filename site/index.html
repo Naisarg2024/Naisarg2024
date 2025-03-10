@@ -1,77 +1,142 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="Naisarg2024" />
+    <meta
+      name="description"
+      content="A portfolio web page created with semantic html"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NJP Lab3</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
+  </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="author" content="Naisarg2024">
-    <meta name="description" content="A portfolio web page created with semantic html">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NJP Lab2</title>
-    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
-</head>
-
-<body>
+  <body>
     <div class="width-wrap">
-        <header id="top">
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="links.html">Links</a></li>
-                    <li><a href="glossary.html">Glossary</a></li>
-                </ul>
-            </nav>
-        </header>
-        <main>
-            <h1>Welcome to Naisarg's Website!</h1>
-            <p>I am a passionate learner with a strong interest in both web development and data science,
-                with a particular focus on data-driven solutions. Currently enrolled in a web development course,
-                I am exploring the fundamentals of front-end and back-end technologies while also deepening my
-                understanding of data science concepts. My goal is to merge these two fields to build intelligent,
-                dynamic applications that leverage data insights for better user experiences.</p>
+      <header id="top">
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="links.html">Links</a></li>
+            <li><a href="glossary.html">Glossary</a></li>
+          </ul>
+        </nav>
+      </header>
+      <main>
+        <h1>Welcome to Naisarg's Website!</h1>
+        <a href="./images/my-picture.jpg" target="_blank">
+          <img
+            src="./images/my-thumbnail-150px.jpg"
+            sizes="(max-width:500px) 150px, 300px"
+            srcset="
+              ./images/my-thumbnail-150px.jpg 150w,
+              ./images/my-thumbnail-300px.jpg 300w
+            "
+            alt="My profile picture"
+          />
+        </a>
+        <p>
+          I am a passionate learner with a strong interest in both web
+          development and data science, with a particular focus on data-driven
+          solutions. Currently enrolled in a web development course, I am
+          exploring the fundamentals of front-end and back-end technologies
+          while also deepening my understanding of data science concepts. My
+          goal is to merge these two fields to build intelligent, dynamic
+          applications that leverage data insights for better user experiences.
+        </p>
 
-            <p>Beyond coding, I enjoy problem-solving and constantly seek ways to enhance my skills through hands-on
-                projects
-                and real-world applications. Whether working on a website or analyzing data trends, I am always eager to
-                learn
-                new tools and frameworks that push the boundaries of what I can create. With a growth mindset and a keen
-                eye for innovation.</p>
+        <p>
+          Beyond coding, I enjoy problem-solving and constantly seek ways to
+          enhance my skills through hands-on projects and real-world
+          applications. Whether working on a website or analyzing data trends, I
+          am always eager to learn new tools and frameworks that push the
+          boundaries of what I can create. With a growth mindset and a keen eye
+          for innovation.
+        </p>
 
-            <h2>My Favourite Things</h2>
-            <!-- Found me! -->
-            <a href="https://github.com/" target="_blank">
-                <img src="images/logo.jpg" alt="A logo of Github" height="120" title="visit Github">
-            </a>
+        <h2>My Favourite Things</h2>
+        <!-- Found me! -->
+        <figure>
+          <a href="https://github.com/" target="_blank">
+            <img
+              src="images/logo.jpg"
+              alt="A logo of Github"
+              height="180"
+              title="visit Github"
+            />
+          </a>
+          <figcaption>
+            Github: A Collaboration Software for Developers
+          </figcaption>
+        </figure>
+        <h3>Activites</h3>
+        <ol>
+          <li>Coding</li>
+          <li>Reading</li>
+          <li>Cooking</li>
+        </ol>
 
-            <h3>Activites</h3>
-            <ol>
-                <li>Coding</li>
-                <li>Reading</li>
-                <li>Cooking</li>
-            </ol>
+        <h3>Haiku</h3>
+        <p>a camera&apos;s flash</p>
+        <p>long after the eyes close</p>
+        <p>in old photographs</p>
+        <cite> by <span class="author">Jane Rechhold</span> </cite>
+        <h3>Public Domain Audiobook</h3>
+        <audio controls>
+          <source
+            src="https://ia801005.us.archive.org/18/items/cb20_old_age_1907_librivox/cb20_old_age_01_various_64kb.mp3"
+            type="audio/mpeg"
+          />
+          Your browser does not support the audio element.
+          <!-- Fallback link -->
+          <a
+            href="https://www.archive.org/download/cb20_old_age_1907_librivox/cb20_old_age_1907_librivox_64kb_mp3.zip"
+            download
+            >Click here to download the recording</a
+          >
+        </audio>
+        <h3>YouTube Video</h3>
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/GxmfcnU3feo?si=j3ZdFZcp_wH5muQQ"
+          title="YouTube video player"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+        ></iframe>
+      </main>
 
-            <h3>Haiku</h3>
-            <p>a camera&apos;s flash</p>
-            <p>long after the eyes close</p>
-            <p>in old photographs</p>
-            <cite>
-                by <span class="author">Jane Rechhold</span>
-            </cite>
-        </main>
+      <footer>
+        <hr />
+        <blockquote>
+          &quot;Tell me and I forget. Teach me and I remember. Involve me and I
+          learn.&quot;
+          <br />
+          <cite>
+            <em>— <span class="author">Benjamin Franklin</span></em>
+          </cite>
+        </blockquote>
+        <p>
+          &copy; 2025
+          <a
+            href="mailto:naisargjpatel@gmail.com?subject=Message%20from%20CSD112%20Website"
+            >Naisarg Patel</a
+          >
+        </p>
+        <picture>
+          <source srcset="./images/sc-logo.svg" type="image/svg+xml" />
+          <img
+            src="./images/sc-logo.png"
+            width="70"
+            srcset="./images/sc-logo_105.png 1.5x, ./images/sc-logo_140.png 2x"
+            alt="Sault College Logo"
+          />
+        </picture>
+      </footer>
 
-        <footer>
-            <hr>
-            <blockquote>
-                &quot;Tell me and I forget. Teach me and I remember. Involve me and I learn.&quot;
-                <br>
-                <cite>
-                    <em>— <span class="author">Benjamin Franklin</span></em>
-                </cite>
-            </blockquote>
-            <p>&copy; 2025 <a href="mailto:naisargjpatel@gmail.com?subject=Message%20from%20CSD112%20Website">Naisarg Patel</a></p>
-        </footer>
-
-        <a href="#top" title="Back to top">◤</a>
+      <a href="#top" title="Back to top">◤</a>
     </div>
-</body>
-
+  </body>
 </html>
