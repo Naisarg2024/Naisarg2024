@@ -2,16 +2,25 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8"/>
-  <meta name="author" content="Naisarg2024"/>
-  <meta name="description" content="A portfolio web page created with semantic html"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta charset="UTF-8">
+  <meta name="author" content="Naisarg2024">
+  <meta name="description" content="A portfolio web page created with semantic html">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>NJP</title>
-  <link rel="icon" type="image/x-icon" href="images/favicon.ico"/>
+  <link rel="icon" type="image/x-icon" href="images/favicon.ico">
   <!-- Stylesheets block -->
-  <link rel="stylesheet" href="./styles/normalize.css"/>
-  <link rel="stylesheet" href="./styles/main.css"/>
+  <link rel="stylesheet" href="./styles/normalize.css">
+  <link rel="stylesheet" href="./styles/main.css">
   <!-- End of Stylesheets block -->
+  <!-- font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap"
+    rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap"
+    rel="stylesheet">
+  <!-- end of font -->
 </head>
 
 <body>
@@ -23,131 +32,133 @@
           <li><a href="links.html">Links</a></li>
           <li><a href="glossary.html">Glossary</a></li>
           <li><a href="survey.html">Survey Form</a></li>
+          <li><a href="lorem.html">Lorem Ipsum</a></li>
         </ul>
       </nav>
     </header>
     <main>
       <h1>Welcome to Naisarg's Website!</h1>
-      <a href="./images/my-picture.jpg" target="_blank">
-        <img src="./images/my-thumbnail-150px.jpg" sizes="(max-width:500px) 150px, 300px" srcset="
+      <div class="bio">
+        <a href="./images/my-picture.jpg" target="_blank">
+          <img src="./images/my-thumbnail-150px.jpg" sizes="(max-width:500px) 150px, 300px" srcset="
               ./images/my-thumbnail-150px.jpg 150w,
               ./images/my-thumbnail-300px.jpg 300w
-            " alt="My profile picture"/>
-      </a>
-      <p>
-        I am a passionate learner with a strong interest in both web
-        development and data science, with a particular focus on data-driven
-        solutions. Currently enrolled in a web development course, I am
-        exploring the fundamentals of front-end and back-end technologies
-        while also deepening my understanding of data science concepts. My
-        goal is to merge these two fields to build intelligent, dynamic
-        applications that leverage data insights for better user experiences.
-      </p>
+            " alt="My profile picture">
+        </a>
+        <p>
+          I am a passionate learner with a strong interest in both web
+          development and data science, with a particular focus on data-driven
+          solutions. Currently enrolled in a web development course, I am
+          exploring the fundamentals of front-end and back-end technologies
+          while also deepening my understanding of data science concepts. My
+          goal is to merge these two fields to build intelligent, dynamic
+          applications that leverage data insights for better user experiences.
+        </p>
 
-      <p>
-        Beyond coding, I enjoy problem-solving and constantly seek ways to
-        enhance my skills through hands-on projects and real-world
-        applications. Whether working on a website or analyzing data trends, I
-        am always eager to learn new tools and frameworks that push the
-        boundaries of what I can create. With a growth mindset and a keen eye
-        for innovation.
-      </p>
-      <!-- Lab 4 Table -->
-      <div id="making-a-table">
-        <table>
-          <!-- table caption -->
-          <caption>
-            Table 1. Current Courses
-          </caption>
-          <!-- table head section -->
-          <thead>
-            <tr>
-              <th scope="col" rowspan="2">Term</th>
-              <th scope="col" colspan="3">Course</th>
-            </tr>
-            <tr>
-              <th scope="col">Code</th>
-              <th scope="col">Name</th>
-              <th scope="col">Hrs/Week</th>
-            </tr>
-          </thead>
-          <!-- table body section -->
-          <tbody>
-            <tr>
-              <th scope="rowgroup" rowspan="6">Fall</th>
-              <td>CSD105</td>
-              <td>Python</td>
-              <td>3</td>
-            </tr>
-            <tr>
-              <td>CMM115</td>
-              <td>Communications I</td>
-              <td>3</td>
-            </tr>
-            <tr>
-              <td>CSD120</td>
-              <td>Introduction to Web Development</td>
-              <td>4</td>
-            </tr>
-            <tr>
-              <td>CSO104</td>
-              <td>Introduction to Operating Systems and LAN</td>
-              <td>4</td>
-            </tr>
-            <tr>
-              <td>MTH122</td>
-              <td>Computer Mathematics</td>
-              <td>3</td>
-            </tr>
-            <tr>
-              <td>TNY130</td>
-              <td>Technology in Society</td>
-              <td>2</td>
-            </tr>
-            <!-- winter courses -->
-            <tr>
-              <th scope="rowgroup" rowspan="5">Winter</th>
-              <td>CSA103</td>
-              <td>Business Applications I</td>
-              <td>4</td>
-            </tr>
-            <tr>
-              <td>CSD102</td>
-              <td>Programming Using C++</td>
-              <td>5</td>
-            </tr>
-            <tr>
-              <td>CSD212</td>
-              <td>Web Scripting Languages</td>
-              <td>4</td>
-            </tr>
-            <tr>
-              <td>CS102</td>
-              <td>Introduction to Linux</td>
-              <td>4</td>
-            </tr>
-            <tr>
-              <td>CST104</td>
-              <td>PC Hardware and Networking</td>
-              <td>5</td>
-            </tr>
-          </tbody>
-          <!-- table footer section -->
-          <tfoot>
-            <tr>
-              <th scope="row" colspan="3">Total</th>
-              <td>41</td>
-            </tr>
-          </tfoot>
-        </table>
+        <p>
+          Beyond coding, I enjoy problem-solving and constantly seek ways to
+          enhance my skills through hands-on projects and real-world
+          applications. Whether working on a website or analyzing data trends, I
+          am always eager to learn new tools and frameworks that push the
+          boundaries of what I can create. With a growth mindset and a keen eye
+          for innovation.
+        </p>
+        <!-- Lab 4 Table -->
+        <div id="making-a-table">
+          <table>
+            <!-- table caption -->
+            <caption>
+              Table 1. Current Courses
+            </caption>
+            <!-- table head section -->
+            <thead>
+              <tr>
+                <th scope="col" rowspan="2">Term</th>
+                <th scope="col" colspan="3">Course</th>
+              </tr>
+              <tr>
+                <th scope="col">Code</th>
+                <th scope="col">Name</th>
+                <th scope="col">Hrs/Week</th>
+              </tr>
+            </thead>
+            <!-- table body section -->
+            <tbody>
+              <tr>
+                <th scope="rowgroup" rowspan="6">Fall</th>
+                <td>CSD105</td>
+                <td>Python</td>
+                <td>3</td>
+              </tr>
+              <tr>
+                <td>CMM115</td>
+                <td>Communications I</td>
+                <td>3</td>
+              </tr>
+              <tr>
+                <td>CSD120</td>
+                <td>Introduction to Web Development</td>
+                <td>4</td>
+              </tr>
+              <tr>
+                <td>CSO104</td>
+                <td>Introduction to Operating Systems and LAN</td>
+                <td>4</td>
+              </tr>
+              <tr>
+                <td>MTH122</td>
+                <td>Computer Mathematics</td>
+                <td>3</td>
+              </tr>
+              <tr>
+                <td>TNY130</td>
+                <td>Technology in Society</td>
+                <td>2</td>
+              </tr>
+              <!-- winter courses -->
+              <tr>
+                <th scope="rowgroup" rowspan="5">Winter</th>
+                <td>CSA103</td>
+                <td>Business Applications I</td>
+                <td>4</td>
+              </tr>
+              <tr>
+                <td>CSD102</td>
+                <td>Programming Using C++</td>
+                <td>5</td>
+              </tr>
+              <tr>
+                <td>CSD212</td>
+                <td>Web Scripting Languages</td>
+                <td>4</td>
+              </tr>
+              <tr>
+                <td>CS102</td>
+                <td>Introduction to Linux</td>
+                <td>4</td>
+              </tr>
+              <tr>
+                <td>CST104</td>
+                <td>PC Hardware and Networking</td>
+                <td>5</td>
+              </tr>
+            </tbody>
+            <!-- table footer section -->
+            <tfoot>
+              <tr>
+                <th scope="row" colspan="3">Total</th>
+                <td>41</td>
+              </tr>
+            </tfoot>
+          </table>
+        </div>
+        <!-- END OF Lab 4 Table -->
       </div>
-      <!-- END OF Lab 4 Table -->
-
       <h2>My Favourite Things</h2>
       <!-- Found me! -->
       <figure>
         <a href="https://github.com/" target="_blank">
-          <img src="images/logo.jpg" alt="A logo of Github" height="180" title="visit Github"/>
+          <img src="images/logo.jpg" alt="A logo of Github" height="180" title="visit Github">
         </a>
         <figcaption>
           Github: A Collaboration Software for Developers
@@ -169,7 +180,7 @@
       <audio controls>
         <source
           src="https://ia801005.us.archive.org/18/items/cb20_old_age_1907_librivox/cb20_old_age_01_various_64kb.mp3"
-          type="audio/mpeg"/>
+          type="audio/mpeg">
         Your browser does not support the audio element.
         <!-- Fallback link -->
         <a href="https://www.archive.org/download/cb20_old_age_1907_librivox/cb20_old_age_1907_librivox_64kb_mp3.zip"
@@ -183,11 +194,11 @@
     </main>
 
     <footer>
-      <hr/>
+      <hr>
       <blockquote>
         &quot;Tell me and I forget. Teach me and I remember. Involve me and I
         learn.&quot;
-        <br/>
+        <br>
         <cite> &mdash; <span class="author">Benjamin Franklin</span> </cite>
       </blockquote>
       <p>
@@ -195,9 +206,9 @@
         <a href="mailto:naisargjpatel@gmail.com?subject=Message%20from%20CSD112%20Website">Naisarg Patel</a>
       </p>
       <picture>
-        <source srcset="./images/sc-logo.svg" type="image/svg+xml"/>
+        <source srcset="./images/sc-logo.svg" type="image/svg+xml">
         <img src="./images/sc-logo.png" width="70" srcset="./images/sc-logo_105.png 1.5x, ./images/sc-logo_140.png 2x"
-          alt="Sault College Logo"/>
+          alt="Sault College Logo">
       </picture>
     </footer>
 
