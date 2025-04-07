@@ -31,8 +31,9 @@
           <li><a href="index.html">Home</a></li>
           <li><a href="links.html">Links</a></li>
           <li><a href="glossary.html">Glossary</a></li>
-          <li><a href="survey.html">Survey Form</a></li>
-          <li><a href="lorem.html">Lorem Ipsum</a></li>
+          <li><a href="survey.html">Survey</a></li>
+          <li><a href="lorem.html">Lorem</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
         </ul>
       </nav>
     </header>
@@ -44,6 +45,7 @@
               ./images/my-thumbnail-150px.jpg 150w,
               ./images/my-thumbnail-300px.jpg 300w
             " alt="My profile picture">
+          <img src="./images/paperclip.png" alt="paperclip" class="paperclip">
         </a>
         <p>
           I am a passionate learner with a strong interest in both web
@@ -156,41 +158,68 @@
       </div>
       <h2>My Favourite Things</h2>
       <!-- Found me! -->
-      <figure>
-        <a href="https://github.com/" target="_blank">
-          <img src="images/logo.jpg" alt="A logo of Github" height="180" title="visit Github">
-        </a>
-        <figcaption>
-          Github: A Collaboration Software for Developers
-        </figcaption>
-      </figure>
-      <h3>Activites</h3>
-      <ol>
-        <li>Coding</li>
-        <li>Reading</li>
-        <li>Cooking</li>
-      </ol>
-
-      <h3>Haiku</h3>
-      <p>a camera&apos;s flash</p>
-      <p>long after the eyes close</p>
-      <p>in old photographs</p>
-      <cite> by <span class="author">Jane Rechhold</span> </cite>
-      <h3>Public Domain Audiobook</h3>
-      <audio controls>
-        <source
-          src="https://ia801005.us.archive.org/18/items/cb20_old_age_1907_librivox/cb20_old_age_01_various_64kb.mp3"
-          type="audio/mpeg">
-        Your browser does not support the audio element.
-        <!-- Fallback link -->
-        <a href="https://www.archive.org/download/cb20_old_age_1907_librivox/cb20_old_age_1907_librivox_64kb_mp3.zip"
-          download>Click here to download the recording</a>
-      </audio>
-      <h3>YouTube Video</h3>
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/GxmfcnU3feo?si=j3ZdFZcp_wH5muQQ"
-        title="YouTube video player"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      <div class="favourites">
+        <input type="radio" name="favourites-tab" id="tab1" checked>
+        <label for="tab1">
+          <h3>Collaboration Tool</h3>
+        </label>
+        <div>
+          <figure>
+            <a href="https://github.com/" target="_blank">
+              <img src="images/logo.jpg" alt="A logo of Github" height="180" title="visit Github">
+            </a>
+            <figcaption>
+              Github: A Collaboration Software for Developers
+            </figcaption>
+          </figure>
+        </div>
+        <input type="radio" name="favourites-tab" id="tab2">
+        <label for="tab2">
+          <h3>Activities</h3>
+        </label>
+        <div>
+          <ol>
+            <li>Coding</li>
+            <li>Reading</li>
+            <li>Cooking</li>
+          </ol>
+        </div>
+        <input type="radio" name="favourites-tab" id="tab3">
+        <label for="tab3">
+          <h3>Haiku</h3>
+        </label>
+        <div>
+          <p>a camera&apos;s flash</p>
+          <p>long after the eyes close</p>
+          <p>in old photographs</p>
+          <cite> by <span class="author">Jane Rechhold</span> </cite>
+        </div>
+        <input type="radio" name="favourites-tab" id="tab4">
+        <label for="tab4">
+          <h3>Public Domain Audiobook</h3>
+        </label>
+        <div>
+          <audio controls>
+            <source
+              src="https://ia801005.us.archive.org/18/items/cb20_old_age_1907_librivox/cb20_old_age_01_various_64kb.mp3"
+              type="audio/mpeg">
+            Your browser does not support the audio element.
+            <!-- Fallback link -->
+            <a href="https://www.archive.org/download/cb20_old_age_1907_librivox/cb20_old_age_1907_librivox_64kb_mp3.zip"
+              download>Click here to download the recording</a>
+          </audio>
+        </div>
+        <input type="radio" name="favourites-tab" id="tab5">
+        <label for="tab5">
+          <h3>YouTube Video</h3>
+        </label>
+        <div>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/GxmfcnU3feo?si=j3ZdFZcp_wH5muQQ"
+            title="YouTube video player"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+      </div>
     </main>
 
     <footer>
@@ -212,7 +241,7 @@
       </picture>
     </footer>
 
-    <a href="#top" title="Back to top">◤</a>
+    <a href="#top" class="back-to-top" title="Back to top">◤</a>
   </div>
 </body>
 
