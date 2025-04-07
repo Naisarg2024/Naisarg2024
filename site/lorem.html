@@ -27,10 +27,25 @@
             margin: 1em;
         }
 
+        .float-right {
+            float: right;
+        }
+        .float-left {
+            float: left;
+        }
+
         footer,
         footer::after {
             clear: both;
         }
+
+        @media (max-width: 600px) {
+        .float-img {
+            float: none;
+            display: block;
+            margin: 1em auto;
+    }
+  }
     </style>
     <!-- end: internal css -->
 </head>
@@ -39,6 +54,8 @@
     <div class="width-wrap">
         <header id="top">
             <nav>
+                <input type="checkbox" id="menu-toggle"/>
+                <label for="menu-toggle" class="sandwich-icon"></label>
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="links.html">Links</a></li>
@@ -52,7 +69,7 @@
         <main>
             <h1>Lorem Ipsum</h1>
             <p><img src="https://loremflickr.com/240/160/technology" alt="Random Tech Image"
-                    style="float: right;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus explicabo
+                    class="float-right float-img">Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus explicabo
                 nesciunt ea voluptatum quaerat commodi dolore aliquam fuga! Necessitatibus voluptatibus, commodi saepe
                 cumque inventore ab et totam officia in facilis hic voluptate mollitia quas nemo! Quis minima ipsum
                 sequi minus vero consectetur numquam ex quod odit dicta! Velit vitae sint ipsam architecto saepe,
@@ -67,7 +84,7 @@
                 dolorum assumenda reiciendis dolore. Laborum dolore blanditiis expedita quasi quo reprehenderit eos,
                 harum eveniet, incidunt ipsum quos laboriosam optio.</p>
 
-            <p><img src="https://loremflickr.com/240/160/coding" alt="Random Coding Image" style="float: left;">Lorem
+            <p><img src="https://loremflickr.com/240/160/coding" alt="Random Coding Image" class="float-left float-img">Lorem
                 ipsum dolor sit amet consectetur adipisicing elit. At quisquam quos accusamus iure commodi culpa. Est
                 magnam, deserunt commodi optio minima inventore id possimus dolorem rerum nemo adipisci, soluta tempora
                 at nisi veritatis libero cumque expedita iure dicta necessitatibus distinctio quibusdam quod quaerat?
